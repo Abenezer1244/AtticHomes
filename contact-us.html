@@ -1,0 +1,782 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth"><head><meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Contact Us — Schedule a Tour | Attic Adult Family Home</title>
+<meta name="description" content="Contact Attic Adult Family Home in Auburn, WA. Schedule a private tour, ask questions about our care services, or speak with our team. Call (469) 735-5759 or email care@atticafh.com.">
+<meta name="keywords" content="contact attic adult family home, schedule tour Auburn WA, adult family home contact, senior care consultation, Auburn senior living contact">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://www.atticafh.com/contact-us.html">
+
+<!-- Open Graph / Facebook -->
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://www.atticafh.com/contact-us.html">
+<meta property="og:title" content="Contact Us — Schedule a Tour | Attic Adult Family Home">
+<meta property="og:description" content="Contact us to schedule a private tour or ask questions about our senior care services. We're here to help you find the right care solution for your loved one.">
+<meta property="og:image" content="https://www.atticafh.com/images/attic-afh-contact-og.jpg">
+
+<!-- Twitter -->
+<meta property="twitter:card" content="summary_large_image">
+<meta property="twitter:url" content="https://www.atticafh.com/contact-us.html">
+<meta property="twitter:title" content="Contact Us — Schedule a Tour | Attic Adult Family Home">
+<meta property="twitter:description" content="Contact us to schedule a private tour or ask questions about our senior care services.">
+
+<!-- Local Business Schema with Contact Info -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "LocalBusiness",
+  "@id": "https://www.atticafh.com/#organization",
+  "name": "Attic Adult Family Home",
+  "alternateName": "Attic AFH",
+  "url": "https://www.atticafh.com",
+  "logo": "https://www.atticafh.com/images/attic-afh-logo.png",
+  "image": "https://www.atticafh.com/images/attic-afh-building.jpg",
+  "description": "Compassionate senior care facility providing personalized assistance, dementia care, and 24/7 nursing support in a warm, home-like environment.",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "29836 113th Way SE",
+    "addressLocality": "Auburn",
+    "addressRegion": "WA",
+    "postalCode": "98092",
+    "addressCountry": "US"
+  },
+  "geo": {
+    "@type": "GeoCoordinates",
+    "latitude": "47.33455420672419",
+    "longitude": "-122.19240092367845"
+  },
+  "telephone": "+1-469-735-5759",
+  "email": "care@atticafh.com",
+  "priceRange": "$$",
+  "openingHoursSpecification": {
+    "@type": "OpeningHoursSpecification",
+    "dayOfWeek": [
+      "Monday",
+      "Tuesday",
+      "Wednesday",
+      "Thursday",
+      "Friday",
+      "Saturday",
+      "Sunday"
+    ],
+    "opens": "00:00",
+    "closes": "23:59"
+  },
+  "areaServed": {
+    "@type": "City",
+    "name": "Auburn"
+  },
+  "serviceArea": {
+    "@type": "GeoCircle",
+    "geoMidpoint": {
+      "@type": "GeoCoordinates",
+      "latitude": "47.6038321",
+      "longitude": "-122.373954"
+    },
+    "geoRadius": {
+      "@type": "Distance",
+      "value": "50",
+      "unitCode": "mi"
+    }
+  },
+  "aggregateRating": {
+    "@type": "AggregateRating",
+    "ratingValue": "4.9",
+    "reviewCount": "24",
+    "bestRating": "5",
+    "worstRating": "1"
+  },
+  "sameAs": [
+    "https://www.google.com/maps?cid=YOUR_GOOGLE_BUSINESS_CID"
+  ],
+  "potentialAction": {
+    "@type": "ReserveAction",
+    "target": {
+      "@type": "EntryPoint",
+      "urlTemplate": "https://www.atticafh.com/contact-us.html",
+      "actionPlatform": [
+        "http://schema.org/DesktopWebPlatform",
+        "http://schema.org/MobileWebPlatform"
+      ]
+    },
+    "result": {
+      "@type": "Reservation",
+      "name": "Schedule a Tour"
+    }
+  }
+}
+</script>
+<!-- 
+  GOOGLE BUSINESS PROFILE SETUP INSTRUCTIONS:
+  1. Create/claim your Google Business Profile at: https://business.google.com
+  2. Once verified, find your CID (Customer ID) in the Google Maps URL
+  3. Replace "YOUR_GOOGLE_BUSINESS_CID" above with your actual CID
+  4. Example: "https://www.google.com/maps?cid=12345678901234567890"
+  5. This connects your website to your Google Business Profile for better local SEO
+-->
+
+<script src="https://cdn.tailwindcss.com"></script>
+<script src="https://unpkg.com/lucide@latest"></script>
+<!-- EmailJS SDK -->
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&amp;family=Playfair+Display:ital,wght@0,400;0,500;1,400&amp;family=JetBrains+Mono:wght@400;500&amp;display=swap" rel="stylesheet">
+<style>
+:root {
+--font-sans: 'Inter', sans-serif;
+--font-serif: 'Playfair Display', serif;
+--font-mono: 'JetBrains Mono', monospace;
+}
+body {
+font-family: var(--font-sans);
+background-color: #050505;
+color: #e5e5e5;
+-webkit-font-smoothing: antialiased;
+}
+.font-serif { font-family: var(--font-serif); }
+.font-mono { font-family: var(--font-mono); }
+/* Custom Scrollbar */
+::-webkit-scrollbar { width: 6px; }
+::-webkit-scrollbar-track { background: #0a0a0a; }
+::-webkit-scrollbar-thumb { background: #333; border-radius: 3px; }
+::-webkit-scrollbar-thumb:hover { background: #444; }
+/* Animation Utilities */
+.animate-fade-up { opacity: 0; transform: translateY(20px); animation: fadeUp 0.8s cubic-bezier(0.16, 1, 0.3, 1) forwards; }
+.delay-100 { animation-delay: 0.1s; }
+.delay-200 { animation-delay: 0.2s; }
+.delay-300 { animation-delay: 0.3s; }
+@keyframes fadeUp {
+to { opacity: 1; transform: translateY(0); }
+}
+/* Glass Cards */
+.glass-panel {
+background: rgba(20, 20, 20, 0.6);
+backdrop-filter: blur(12px);
+border: 1px solid rgba(255, 255, 255, 0.08);
+}
+.glass-input {
+background: rgba(10, 10, 10, 0.6);
+border: 1px solid rgba(255, 255, 255, 0.1);
+transition: all 0.2s ease;
+}
+.glass-input:focus {
+border-color: #f97316;
+background: rgba(20, 20, 20, 0.8);
+outline: none;
+box-shadow: 0 0 0 1px rgba(249, 115, 22, 0.2);
+}
+.glass-input:invalid:not(:placeholder-shown) {
+border-color: #ef4444;
+}
+.glass-input:valid:not(:placeholder-shown) {
+border-color: #22c55e;
+}
+/* Map Filter for Dark Mode */
+.map-dark-mode {
+filter: invert(100%) hue-rotate(180deg) brightness(95%) contrast(90%);
+}
+</style>
+<link id="all-fonts-link-font-geist" rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Geist:wght@300;400;500;600;700&amp;display=swap"><style id="all-fonts-style-font-geist">.font-geist { font-family: 'Geist', sans-serif !important; }</style><link id="all-fonts-link-font-roboto" rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;600;700&amp;display=swap"><style id="all-fonts-style-font-roboto">.font-roboto { font-family: 'Roboto', sans-serif !important; }</style><link id="all-fonts-link-font-montserrat" rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&amp;display=swap"><style id="all-fonts-style-font-montserrat">.font-montserrat { font-family: 'Montserrat', sans-serif !important; }</style><link id="all-fonts-link-font-poppins" rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&amp;display=swap"><style id="all-fonts-style-font-poppins">.font-poppins { font-family: 'Poppins', sans-serif !important; }</style><link id="all-fonts-link-font-playfair" rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700;900&amp;display=swap"><style id="all-fonts-style-font-playfair">.font-playfair { font-family: 'Playfair Display', serif !important; }</style><link id="all-fonts-link-font-instrument-serif" rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Instrument+Serif:wght@400;500;600;700&amp;display=swap"><style id="all-fonts-style-font-instrument-serif">.font-instrument-serif { font-family: 'Instrument Serif', serif !important; }</style><link id="all-fonts-link-font-merriweather" rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Merriweather:wght@300;400;700;900&amp;display=swap"><style id="all-fonts-style-font-merriweather">.font-merriweather { font-family: 'Merriweather', serif !important; }</style><link id="all-fonts-link-font-bricolage" rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@300;400;500;600;700&amp;display=swap"><style id="all-fonts-style-font-bricolage">.font-bricolage { font-family: 'Bricolage Grotesque', sans-serif !important; }</style><link id="all-fonts-link-font-jakarta" rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&amp;display=swap"><style id="all-fonts-style-font-jakarta">.font-jakarta { font-family: 'Plus Jakarta Sans', sans-serif !important; }</style><link id="all-fonts-link-font-manrope" rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;500;600;700;800&amp;display=swap"><style id="all-fonts-style-font-manrope">.font-manrope { font-family: 'Manrope', sans-serif !important; }</style><link id="all-fonts-link-font-space-grotesk" rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&amp;display=swap"><style id="all-fonts-style-font-space-grotesk">.font-space-grotesk { font-family: 'Space Grotesk', sans-serif !important; }</style><link id="all-fonts-link-font-work-sans" rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@300;400;500;600;700;800&amp;display=swap"><style id="all-fonts-style-font-work-sans">.font-work-sans { font-family: 'Work Sans', sans-serif !important; }</style><link id="all-fonts-link-font-pt-serif" rel="stylesheet" href="https://fonts.googleapis.com/css2?family=PT+Serif:wght@400;700&amp;display=swap"><style id="all-fonts-style-font-pt-serif">.font-pt-serif { font-family: 'PT Serif', serif !important; }</style><link id="all-fonts-link-font-geist-mono" rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Geist+Mono:wght@300;400;500;600;700&amp;display=swap"><style id="all-fonts-style-font-geist-mono">.font-geist-mono { font-family: 'Geist Mono', monospace !important; }</style><link id="all-fonts-link-font-space-mono" rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&amp;display=swap"><style id="all-fonts-style-font-space-mono">.font-space-mono { font-family: 'Space Mono', monospace !important; }</style><link id="all-fonts-link-font-quicksand" rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&amp;display=swap"><style id="all-fonts-style-font-quicksand">.font-quicksand { font-family: 'Quicksand', sans-serif !important; }</style><link id="all-fonts-link-font-nunito" rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;500;600;700;800&amp;display=swap"><style id="all-fonts-style-font-nunito">.font-nunito { font-family: 'Nunito', sans-serif !important; }</style></head>
+<body class="overflow-x-hidden selection:bg-brand-500/30 selection:text-brand-100 flex flex-col min-h-screen">
+
+    <!-- Ambient Background -->
+    <div class="fixed inset-0 z-0 pointer-events-none">
+      <div class="absolute top-0 right-1/3 w-[600px] h-[600px] bg-brand-600/5 rounded-full blur-[120px] mix-blend-screen opacity-30"></div>
+      <div class="absolute bottom-0 left-1/4 w-[500px] h-[500px] bg-teal-600/5 rounded-full blur-[120px] mix-blend-screen opacity-20"></div>
+      <div class="absolute inset-0 bg-[url('https://grainy-gradients.vercel.app/noise.svg')] opacity-20 brightness-100 contrast-150"></div>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="fixed top-0 w-full z-50 border-b border-white/5 bg-black/50 backdrop-blur-xl">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-16 flex items-center justify-between">
+        <div class="flex items-center gap-4 sm:gap-8">
+          <a href="index.html" class="flex items-center gap-2 group">
+            <div class="w-8 h-8 rounded-lg bg-gradient-to-br from-neutral-800 to-black border border-white/10 flex items-center justify-center group-hover:border-brand-500/50 transition-colors">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-lucide="home" class="lucide lucide-home text-white w-4 h-4"><path d="M15 21v-8a1 1 0 0 0-1-1h-4a1 1 0 0 0-1 1v8"></path><path d="M3 10a2 2 0 0 1 .709-1.528l7-6a2 2 0 0 1 2.582 0l7 6A2 2 0 0 1 21 10v9a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path></svg>
+            </div>
+            <span class="text-sm sm:text-base font-medium text-white tracking-tight font-serif">
+              Attic AFH
+            </span>
+          </a>
+          <div class="hidden md:flex gap-6 text-sm font-medium text-neutral-400 gap-x-6 gap-y-6 items-center">
+            <a href="index.html" class="hover:text-white transition-colors">Home</a>
+            <a href="about-us.html" class="hover:text-white transition-colors">About Us</a>
+            <a href="gallery.html" class="hover:text-white transition-colors">Gallery</a>
+            <a href="services.html" class="hover:text-white transition-colors">Services</a>
+            <a href="contact-us.html" class="text-white transition-colors">Contact Us</a>
+          </div>
+        </div>
+        <div class="flex items-center gap-2 sm:gap-4">
+          <a href="contact-us.html" class="hidden sm:flex items-center gap-2 hover:bg-neutral-200 transition-colors text-xs font-medium text-black bg-white h-9 rounded-full px-5 shadow-[0_0_20px_rgba(255,255,255,0.1)]">
+            <span class="">Schedule a Visit</span>
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-lucide="calendar" class="lucide lucide-calendar w-3.5 h-3.5"><path d="M8 2v4"></path><path d="M16 2v4"></path><rect width="18" height="18" x="3" y="4" rx="2"></rect><path d="M3 10h18"></path></svg>
+          </a>
+          <!-- Mobile Menu Button -->
+          <button id="mobile-menu-button" class="md:hidden w-10 h-10 flex items-center justify-center rounded-lg border border-white/10 hover:border-white/20 transition-colors" aria-label="Toggle menu">
+            <svg id="menu-icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-white w-5 h-5"><line x1="4" x2="20" y1="12" y2="12"></line><line x1="4" x2="20" y1="6" y2="6"></line><line x1="4" x2="20" y1="18" y2="18"></line></svg>
+            <svg id="close-icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-white w-5 h-5 hidden"><line x1="18" x2="6" y1="6" y2="18"></line><line x1="6" x2="18" y1="6" y2="18"></line></svg>
+          </button>
+        </div>
+      </div>
+      
+      <!-- Mobile Menu -->
+      <div id="mobile-menu" class="md:hidden hidden fixed inset-x-0 top-16 bg-black/95 backdrop-blur-xl border-b border-white/5">
+        <div class="px-4 py-6 space-y-1">
+          <a href="index.html" class="block px-4 py-3 rounded-lg text-neutral-400 hover:text-white hover:bg-white/5 transition-colors">Home</a>
+          <a href="about-us.html" class="block px-4 py-3 rounded-lg text-neutral-400 hover:text-white hover:bg-white/5 transition-colors">About Us</a>
+          <a href="gallery.html" class="block px-4 py-3 rounded-lg text-neutral-400 hover:text-white hover:bg-white/5 transition-colors">Gallery</a>
+          <a href="services.html" class="block px-4 py-3 rounded-lg text-neutral-400 hover:text-white hover:bg-white/5 transition-colors">Services</a>
+          <a href="contact-us.html" class="block px-4 py-3 rounded-lg text-white hover:bg-white/5 transition-colors font-medium">Contact Us</a>
+          <a href="contact-us.html" class="block mt-4 px-4 py-3 rounded-lg bg-white text-black text-center font-medium hover:bg-neutral-200 transition-colors">
+            Schedule a Visit
+          </a>
+        </div>
+      </div>
+    </nav>
+
+    <!-- New Contact Hero -->
+    <section class="relative pt-24 sm:pt-32 lg:pt-48 pb-12 sm:pb-16 lg:pb-24 overflow-hidden z-10">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center relative z-10">
+            <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full border border-brand-500/20 bg-brand-500/5 text-brand-300 text-xs font-medium mb-6 sm:mb-8 animate-fade-up">
+                <span class="w-1.5 h-1.5 rounded-full bg-brand-500 animate-pulse"></span>
+                <span class="">We are here to help</span>
+            </div>
+            
+            <h1 class="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-serif text-white mb-4 sm:mb-6 tracking-tight leading-[1.1] animate-fade-up delay-100 px-4">
+                Let's start the
+                <span class="text-orange-400 bg-gradient-to-br from-white/0 via-white/10 to-white/0">
+                     conversation.
+                </span>
+            </h1>
+            
+            <p class="text-base sm:text-lg text-neutral-400 max-w-2xl mx-auto leading-relaxed animate-fade-up delay-200 px-4">
+                Whether you have questions about our care levels, want to schedule a private tour, or simply need advice on senior living options, our team is ready to listen.
+            </p>
+        </div>
+        
+        <!-- Subtle decorative grid -->
+        <div class="absolute inset-0 bg-[url('https://grainy-gradients.vercel.app/noise.svg')] opacity-20 -z-10"></div>
+        <div class="absolute bottom-0 left-0 right-0 h-px bg-gradient-to-r from-transparent via-white/10 to-transparent"></div>
+    </section>
+
+    <!-- Main Contact Content -->
+    <section class="relative z-10 pb-12 sm:pb-16 lg:pb-24">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 sm:gap-12 lg:gap-24">
+                
+                <!-- Left Column: Contact Info -->
+                <div class="lg:col-span-5 space-y-8 animate-fade-up delay-300">
+                    <div class="glass-panel p-8 rounded-3xl border border-white/10">
+                        <h3 class="text-xl font-serif text-white mb-8">Contact Information</h3>
+                        
+                        <div class="space-y-8">
+                            <!-- Phone -->
+                            <div class="flex gap-5 group">
+                                <div class="w-12 h-12 rounded-xl bg-neutral-900 border border-white/10 flex items-center justify-center text-brand-500 group-hover:border-brand-500/30 transition-colors shrink-0">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-lucide="phone" class="lucide lucide-phone w-5 h-5"><path d="M13.832 16.568a1 1 0 0 0 1.213-.303l.355-.465A2 2 0 0 1 17 15h3a2 2 0 0 1 2 2v3a2 2 0 0 1-2 2A18 18 0 0 1 2 4a2 2 0 0 1 2-2h3a2 2 0 0 1 2 2v3a2 2 0 0 1-.8 1.6l-.468.351a1 1 0 0 0-.292 1.233 14 14 0 0 0 6.392 6.384"></path></svg>
+                                </div>
+                                <div class="">
+                                    <p class="text-xs font-mono text-neutral-500 uppercase tracking-widest mb-1">Call Us Anytime</p>
+                                    <a href="tel:+14697355759" class="text-lg text-white font-medium hover:text-brand-400 transition-colors">
+                                        (469) 735-5759
+                                    </a>
+                                    <p class="text-sm text-neutral-500 mt-1">24/7 Nursing Support available</p>
+                                </div>
+                            </div>
+
+                            <!-- Email -->
+                            <div class="flex gap-5 group">
+                                <div class="w-12 h-12 rounded-xl bg-neutral-900 border border-white/10 flex items-center justify-center text-brand-500 group-hover:border-brand-500/30 transition-colors shrink-0">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-lucide="mail" class="lucide lucide-mail w-5 h-5"><path d="m22 7-8.991 5.727a2 2 0 0 1-2.009 0L2 7"></path><rect x="2" y="4" width="20" height="16" rx="2"></rect></svg>
+                                </div>
+                                <div class="">
+                                    <p class="text-xs font-mono text-neutral-500 uppercase tracking-widest mb-1">Email Us</p>
+                                    <a href="mailto:care@atticafh.com" class="text-lg text-white font-medium hover:text-brand-400 transition-colors">
+                                        care@atticafh.com
+                                    </a>
+                                    <p class="text-sm text-neutral-500 mt-1">We typically reply within 2 hours</p>
+                                </div>
+                            </div>
+
+                            <!-- Location -->
+                            <div class="flex gap-5 group">
+                                <div class="w-12 h-12 rounded-xl bg-neutral-900 border border-white/10 flex items-center justify-center text-brand-500 group-hover:border-brand-500/30 transition-colors shrink-0">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-lucide="map-pin" class="lucide lucide-map-pin w-5 h-5"><path d="M20 10c0 4.993-5.539 10.193-7.399 11.799a1 1 0 0 1-1.202 0C9.539 20.193 4 14.993 4 10a8 8 0 0 1 16 0"></path><circle cx="12" cy="10" r="3"></circle></svg>
+                                </div>
+                                <div>
+                                    <p class="text-xs font-mono text-neutral-500 uppercase tracking-widest mb-1">Visit Us</p>
+                                    <p class="text-lg text-white font-medium">
+                                        29836 113th Way SE
+                                    </p>
+                                    <p class="text-neutral-400">Auburn, WA 98092</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="mt-10 pt-8 border-t border-white/5">
+                            <p class="text-sm text-neutral-400 mb-4">Follow our daily stories:</p>
+                            <div class="flex gap-4">
+                                <a href="#" class="w-10 h-10 rounded-full border border-white/10 flex items-center justify-center text-neutral-400 hover:text-white hover:bg-white/5 transition-all">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-lucide="facebook" class="lucide lucide-facebook w-4 h-4"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path></svg>
+                                </a>
+                                <a href="#" class="w-10 h-10 rounded-full border border-white/10 flex items-center justify-center text-neutral-400 hover:text-white hover:bg-white/5 transition-all">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-lucide="instagram" class="lucide lucide-instagram w-4 h-4"><rect width="20" height="20" x="2" y="2" rx="5" ry="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" x2="17.51" y1="6.5" y2="6.5"></line></svg>
+                                </a>
+                                <a href="#" class="w-10 h-10 rounded-full border border-white/10 flex items-center justify-center text-neutral-400 hover:text-white hover:bg-white/5 transition-all">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-lucide="twitter" class="lucide lucide-twitter w-4 h-4"><path d="M22 4s-.7 2.1-2 3.4c1.6 10-9.4 17.3-18 11.6 2.2.1 4.4-.6 6-2C3 15.5.5 9.6 3 5c2.2 2.6 5.6 4.1 9 4-.9-4.2 4-6.6 7-3.8 1.1 0 3-1.2 3-1.2z"></path></svg>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Right Column: Send Message Form -->
+                <div class="lg:col-span-7 animate-fade-up delay-200">
+                    <div class="bg-black/40 backdrop-blur-sm p-6 sm:p-8 md:p-10 rounded-2xl sm:rounded-3xl border border-white/10 relative overflow-hidden">
+                        <div class="absolute top-0 right-0 p-32 bg-brand-500/5 rounded-full blur-[80px] pointer-events-none"></div>
+                        
+                        <h3 class="text-xl sm:text-2xl font-serif text-white mb-4 sm:mb-6">Send a Message</h3>
+                        
+                        <!-- Success Message -->
+                        <div id="form-success" class="hidden mb-6 p-4 rounded-lg bg-green-500/10 border border-green-500/30 text-green-400 text-sm">
+                            <div class="flex items-center gap-2">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-check-circle"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path><polyline points="22 4 12 14.01 9 11.01"></polyline></svg>
+                                <span>Thank you! Your message has been sent. We'll get back to you within 2 hours.</span>
+                            </div>
+                        </div>
+
+                        <!-- Error Message -->
+                        <div id="form-error" class="hidden mb-6 p-4 rounded-lg bg-red-500/10 border border-red-500/30 text-red-400 text-sm">
+                            <div class="flex items-center gap-2">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-alert-circle"><circle cx="12" cy="12" r="10"></circle><line x1="12" x2="12" y1="8" y2="12"></line><line x1="12" x2="12.01" y1="16" y2="16"></line></svg>
+                                <span id="error-message">Something went wrong. Please try again or call us directly.</span>
+                            </div>
+                        </div>
+                        
+                        <form id="contact-form" class="space-y-4 sm:space-y-6 relative z-10" novalidate>
+                            <div class="grid grid-cols-1 md:grid-cols-2 gap-4 sm:gap-6">
+                                <div class="space-y-2">
+                                    <label for="firstName" class="text-xs font-mono text-neutral-500 uppercase tracking-wider ml-1">First Name <span class="text-red-400">*</span></label>
+                                    <input type="text" id="firstName" name="firstName" required class="w-full h-12 rounded-lg px-4 text-white text-sm glass-input" placeholder="Jane">
+                                    <span class="hidden text-xs text-red-400" id="firstName-error">First name is required</span>
+                                </div>
+                                <div class="space-y-2">
+                                    <label for="lastName" class="text-xs font-mono text-neutral-500 uppercase tracking-wider ml-1">Last Name <span class="text-red-400">*</span></label>
+                                    <input type="text" id="lastName" name="lastName" required class="w-full h-12 rounded-lg px-4 text-white text-sm glass-input" placeholder="Doe">
+                                    <span class="hidden text-xs text-red-400" id="lastName-error">Last name is required</span>
+                                </div>
+                            </div>
+
+                            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                                <div class="space-y-2">
+                                    <label for="email" class="text-xs font-mono text-neutral-500 uppercase tracking-wider ml-1">Email Address <span class="text-red-400">*</span></label>
+                                    <input type="email" id="email" name="email" required class="w-full h-12 rounded-lg px-4 text-white text-sm glass-input" placeholder="jane@example.com">
+                                    <span class="hidden text-xs text-red-400" id="email-error">Please enter a valid email address</span>
+                                </div>
+                                <div class="space-y-2">
+                                    <label for="phone" class="text-xs font-mono text-neutral-500 uppercase tracking-wider ml-1">Phone Number</label>
+                                    <input type="tel" id="phone" name="phone" class="w-full h-12 rounded-lg px-4 text-white text-sm glass-input" placeholder="(555) 000-0000">
+                                </div>
+                            </div>
+
+                            <div class="space-y-2">
+                                <label for="interest" class="text-xs font-mono text-neutral-500 uppercase tracking-wider ml-1">I am interested in... <span class="text-red-400">*</span></label>
+                                <div class="grid grid-cols-1 sm:grid-cols-3 gap-2 sm:gap-3" id="interest-group">
+                                    <label class="cursor-pointer">
+                                        <input type="radio" name="interest" value="Pricing" class="peer sr-only" required>
+                                        <div class="h-10 flex items-center justify-center rounded-lg border border-white/10 bg-white/5 text-sm text-neutral-400 peer-checked:bg-brand-500 peer-checked:text-black peer-checked:border-brand-500 transition-all hover:bg-white/10">
+                                            Pricing
+                                        </div>
+                                    </label>
+                                    <label class="cursor-pointer">
+                                        <input type="radio" name="interest" value="Tour Availability" class="peer sr-only" required>
+                                        <div class="h-10 flex items-center justify-center rounded-lg border border-white/10 bg-white/5 text-sm text-neutral-400 peer-checked:bg-brand-500 peer-checked:text-black peer-checked:border-brand-500 transition-all hover:bg-white/10">
+                                            Tour Availability
+                                        </div>
+                                    </label>
+                                    <label class="cursor-pointer">
+                                        <input type="radio" name="interest" value="General Question" class="peer sr-only" required>
+                                        <div class="h-10 flex items-center justify-center rounded-lg border border-white/10 bg-white/5 text-sm text-neutral-400 peer-checked:bg-brand-500 peer-checked:text-black peer-checked:border-brand-500 transition-all hover:bg-white/10">
+                                            General Question
+                                        </div>
+                                    </label>
+                                </div>
+                                <span class="hidden text-xs text-red-400" id="interest-error">Please select an option</span>
+                            </div>
+
+                            <div class="space-y-2">
+                                <label for="message" class="text-xs font-mono text-neutral-500 uppercase tracking-wider ml-1">How can we help? <span class="text-red-400">*</span></label>
+                                <textarea id="message" name="message" rows="4" required class="w-full rounded-lg p-4 text-white text-sm glass-input resize-none" placeholder="Tell us about your loved one's needs..."></textarea>
+                                <span class="hidden text-xs text-red-400" id="message-error">Please tell us how we can help</span>
+                            </div>
+
+                            <div class="pt-2">
+                                <button type="submit" id="submit-btn" class="w-full h-12 rounded-lg bg-white text-black font-medium hover:bg-neutral-200 transition-colors flex items-center justify-center gap-2 text-sm sm:text-base disabled:opacity-50 disabled:cursor-not-allowed">
+                                    <span id="submit-text">Send Message</span>
+                                    <span id="submit-spinner" class="hidden">
+                                        <svg class="animate-spin h-4 w-4" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24">
+                                            <circle class="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" stroke-width="4"></circle>
+                                            <path class="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z"></path>
+                                        </svg>
+                                    </span>
+                                    <svg id="submit-icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-send w-4 h-4"><path d="M14.536 21.686a.5.5 0 0 0 .937-.024l6.5-19a.496.496 0 0 0-.635-.635l-19 6.5a.5.5 0 0 0-.024.937l7.93 3.18a2 2 0 0 1 1.112 1.11z"></path><path d="m21.854 2.147-10.94 10.939"></path></svg>
+                                </button>
+                                <p class="text-center text-[10px] sm:text-xs text-neutral-600 mt-3 sm:mt-4 px-2">
+                                    By submitting this form, you agree to our privacy policy. Your information is kept confidential.
+                                </p>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Google Map Section -->
+    <section class="w-full h-[400px] md:h-[500px] relative border-y border-white/5 bg-neutral-900 overflow-hidden">
+        <!-- Interactive Map Overlay (for style) -->
+        <div class="absolute inset-0 z-10 pointer-events-none bg-gradient-to-t from-black via-transparent to-transparent opacity-80 h-32 bottom-0"></div>
+        <div class="absolute inset-0 z-10 pointer-events-none bg-gradient-to-b from-black via-transparent to-transparent opacity-80 h-32 top-0"></div>
+        
+        <!-- Google Map Iframe with Dark Mode Filter -->
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2703.9650327653744!2d-122.19240092367845!3d47.33455420672419!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x549058c6588ab3df%3A0xf1ae8f50f3e44049!2s29836%20113th%20Way%20SE%2C%20Auburn%2C%20WA%2098092!5e0!3m2!1sen!2sus!4v1764824054011!5m2!1sen!2sus" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" class="map-dark-mode w-full h-full opacity-60 hover:opacity-80 transition-opacity duration-700" title="Attic AFH Location"></iframe>
+
+        <!-- Location Badge -->
+        <div class="absolute bottom-10 left-6 lg:left-20 z-20">
+            <div class="glass-panel px-6 py-4 rounded-xl flex items-center gap-4 border border-white/10 shadow-2xl">
+                <div class="w-10 h-10 rounded-full bg-brand-500 flex items-center justify-center text-black">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-lucide="map-pin" class="lucide lucide-map-pin w-5 h-5"><path d="M20 10c0 4.993-5.539 10.193-7.399 11.799a1 1 0 0 1-1.202 0C9.539 20.193 4 14.993 4 10a8 8 0 0 1 16 0"></path><circle cx="12" cy="10" r="3"></circle></svg>
+                </div>
+                <div>
+                    <p class="text-sm font-medium text-white">Attic Adult Family Home</p>
+                    <p class="text-xs text-neutral-400">29836 113th Way SE, Auburn, WA 98092</p>
+                </div>
+                <a href="https://maps.google.com" target="_blank" class="ml-4 w-8 h-8 rounded-full bg-white/10 flex items-center justify-center text-white hover:bg-white hover:text-black transition-colors">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-lucide="arrow-up-right" class="lucide lucide-arrow-up-right w-4 h-4"><path d="M7 7h10v10"></path><path d="M7 17 17 7"></path></svg>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-black pt-20 pb-12" id="contact">
+      <div class="max-w-7xl mx-auto px-6 lg:px-8">
+        <div class="flex flex-col lg:flex-row justify-between items-start gap-12 mb-20">
+          <div class="max-w-lg">
+            <a href="index.html" class="flex items-center gap-2 mb-8">
+                <div class="w-8 h-8 rounded-lg bg-gradient-to-br from-neutral-800 to-black border border-white/10 flex items-center justify-center">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-lucide="home" class="lucide lucide-home text-white w-4 h-4"><path d="M15 21v-8a1 1 0 0 0-1-1h-4a1 1 0 0 0-1 1v8"></path><path d="M3 10a2 2 0 0 1 .709-1.528l7-6a2 2 0 0 1 2.582 0l7 6A2 2 0 0 1 21 10v9a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path></svg>
+                </div>
+                <span class="text-lg font-medium text-orange-400 tracking-tight font-serif">
+                  Attic AFH
+                </span>
+            </a>
+            <p class="text-lg text-neutral-400 mb-8">
+              Compassionate senior care in a home-like setting. We are dedicated to providing dignity, respect, and love to every resident.
+            </p>
+          </div>
+
+          <div class="grid grid-cols-2 sm:grid-cols-3 gap-12">
+            <div class="">
+              <h4 class="text-white font-medium mb-4 font-serif text-lg">Explore</h4>
+              <ul class="space-y-3 text-sm text-neutral-500">
+                <li class=""><a href="about-us.html" class="hover:text-brand-500 transition-colors">About Us</a></li>
+                <li class=""><a href="services.html" class="hover:text-brand-500 transition-colors">Services</a></li>
+                <li class=""><a href="gallery.html" class="hover:text-brand-500 transition-colors">Gallery</a></li>
+                <li><a href="index.html#faq" class="hover:text-brand-500 transition-colors">FAQ</a></li>
+              </ul>
+            </div>
+            <div>
+              <h4 class="text-white font-medium mb-4 font-serif text-lg">Contact</h4>
+              <ul class="space-y-3 text-sm text-neutral-500">
+                <li class="hover:text-white transition-colors cursor-pointer">29836 113th Way SE, Auburn, WA 98092</li>
+                <li class="hover:text-white transition-colors cursor-pointer">(469) 735-5759</li>
+                <li class="hover:text-white transition-colors cursor-pointer">care@atticafh.com</li>
+              </ul>
+            </div>
+             <div>
+              <h4 class="text-white font-medium mb-4 font-serif text-lg">Legal</h4>
+              <ul class="space-y-3 text-sm text-neutral-500">
+                <li><a href="#" class="hover:text-white transition-colors">Privacy Policy</a></li>
+                <li><a href="#" class="hover:text-white transition-colors">Terms of Service</a></li>
+                <li><a href="#" class="hover:text-white transition-colors">License Info</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <div class="pt-8 border-t border-white/5 flex flex-col md:flex-row justify-between items-center gap-4">
+          <div class="flex items-center gap-2">
+            <span class="text-xs text-neutral-600">© 2024 Attic Adult Family Home. All rights reserved.</span>
+          </div>
+          <div class="flex gap-4">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-lucide="facebook" class="lucide lucide-facebook w-4 h-4 text-neutral-600 hover:text-white transition-colors cursor-pointer"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path></svg>
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-lucide="twitter" class="lucide lucide-twitter w-4 h-4 text-neutral-600 hover:text-white transition-colors cursor-pointer"><path d="M22 4s-.7 2.1-2 3.4c1.6 10-9.4 17.3-18 11.6 2.2.1 4.4-.6 6-2C3 15.5.5 9.6 3 5c2.2 2.6 5.6 4.1 9 4-.9-4.2 4-6.6 7-3.8 1.1 0 3-1.2 3-1.2z"></path></svg>
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-lucide="linkedin" class="lucide lucide-linkedin w-4 h-4 text-neutral-600 hover:text-white transition-colors cursor-pointer"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path><rect width="4" height="12" x="2" y="9"></rect><circle cx="4" cy="4" r="2"></circle></svg>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script>
+      lucide.createIcons();
+
+      // Initialize EmailJS
+      // IMPORTANT: Replace 'YOUR_PUBLIC_KEY' with your actual EmailJS public key
+      // Get your keys from https://www.emailjs.com/
+      emailjs.init("YOUR_PUBLIC_KEY");
+
+      // Contact Form Handler
+      (function() {
+        const form = document.getElementById('contact-form');
+        const submitBtn = document.getElementById('submit-btn');
+        const submitText = document.getElementById('submit-text');
+        const submitSpinner = document.getElementById('submit-spinner');
+        const submitIcon = document.getElementById('submit-icon');
+        const successMessage = document.getElementById('form-success');
+        const errorMessage = document.getElementById('form-error');
+        const errorMessageText = document.getElementById('error-message');
+
+        // Hide messages function
+        function hideMessages() {
+          successMessage.classList.add('hidden');
+          errorMessage.classList.add('hidden');
+        }
+
+        // Show error function
+        function showError(message) {
+          errorMessageText.textContent = message;
+          errorMessage.classList.remove('hidden');
+          successMessage.classList.add('hidden');
+        }
+
+        // Show success function
+        function showSuccess() {
+          successMessage.classList.remove('hidden');
+          errorMessage.classList.add('hidden');
+          form.reset();
+        }
+
+        // Validate form
+        function validateForm() {
+          const firstName = document.getElementById('firstName').value.trim();
+          const lastName = document.getElementById('lastName').value.trim();
+          const email = document.getElementById('email').value.trim();
+          const interest = document.querySelector('input[name="interest"]:checked');
+          const message = document.getElementById('message').value.trim();
+
+          let isValid = true;
+
+          // Reset error messages
+          document.querySelectorAll('[id$="-error"]').forEach(el => el.classList.add('hidden'));
+
+          // Validate first name
+          if (!firstName) {
+            document.getElementById('firstName-error').classList.remove('hidden');
+            isValid = false;
+          }
+
+          // Validate last name
+          if (!lastName) {
+            document.getElementById('lastName-error').classList.remove('hidden');
+            isValid = false;
+          }
+
+          // Validate email
+          const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+          if (!email || !emailRegex.test(email)) {
+            document.getElementById('email-error').classList.remove('hidden');
+            isValid = false;
+          }
+
+          // Validate interest
+          if (!interest) {
+            document.getElementById('interest-error').classList.remove('hidden');
+            isValid = false;
+          }
+
+          // Validate message
+          if (!message) {
+            document.getElementById('message-error').classList.remove('hidden');
+            isValid = false;
+          }
+
+          return isValid;
+        }
+
+        // Form submission handler
+        form.addEventListener('submit', async function(e) {
+          e.preventDefault();
+          
+          hideMessages();
+
+          // Validate form
+          if (!validateForm()) {
+            showError('Please fill in all required fields correctly.');
+            return;
+          }
+
+          // Disable submit button and show loading state
+          submitBtn.disabled = true;
+          submitText.textContent = 'Sending...';
+          submitSpinner.classList.remove('hidden');
+          submitIcon.classList.add('hidden');
+
+          // Get form data
+          const formData = {
+            firstName: document.getElementById('firstName').value.trim(),
+            lastName: document.getElementById('lastName').value.trim(),
+            email: document.getElementById('email').value.trim(),
+            phone: document.getElementById('phone').value.trim() || 'Not provided',
+            interest: document.querySelector('input[name="interest"]:checked').value,
+            message: document.getElementById('message').value.trim(),
+            timestamp: new Date().toLocaleString('en-US', { 
+              dateStyle: 'long', 
+              timeStyle: 'short' 
+            })
+          };
+
+          try {
+            // Send email using EmailJS
+            // IMPORTANT: Replace these with your actual EmailJS service ID and template ID
+            // Get these from https://dashboard.emailjs.com/
+            const response = await emailjs.send(
+              'YOUR_SERVICE_ID',      // Replace with your EmailJS Service ID
+              'YOUR_TEMPLATE_ID',     // Replace with your EmailJS Template ID
+              {
+                from_name: `${formData.firstName} ${formData.lastName}`,
+                from_email: formData.email,
+                phone: formData.phone,
+                interest: formData.interest,
+                message: formData.message,
+                timestamp: formData.timestamp,
+                to_email: 'care@atticafh.com' // Your receiving email
+              }
+            );
+
+            // Success
+            showSuccess();
+            
+            // Reset button state
+            submitBtn.disabled = false;
+            submitText.textContent = 'Send Message';
+            submitSpinner.classList.add('hidden');
+            submitIcon.classList.remove('hidden');
+
+            // Scroll to success message
+            successMessage.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+
+          } catch (error) {
+            console.error('EmailJS Error:', error);
+            
+            // Show error message
+            showError('Failed to send message. Please try again or call us directly at (469) 735-5759.');
+            
+            // Reset button state
+            submitBtn.disabled = false;
+            submitText.textContent = 'Send Message';
+            submitSpinner.classList.add('hidden');
+            submitIcon.classList.remove('hidden');
+          }
+        });
+
+        // Real-time validation on input
+        const inputs = form.querySelectorAll('input, textarea');
+        inputs.forEach(input => {
+          input.addEventListener('blur', function() {
+            const errorId = input.id + '-error';
+            const errorEl = document.getElementById(errorId);
+            if (errorEl) {
+              if (input.hasAttribute('required') && !input.value.trim()) {
+                errorEl.classList.remove('hidden');
+              } else if (input.type === 'email' && input.value.trim()) {
+                const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+                if (!emailRegex.test(input.value.trim())) {
+                  errorEl.classList.remove('hidden');
+                } else {
+                  errorEl.classList.add('hidden');
+                }
+              } else {
+                errorEl.classList.add('hidden');
+              }
+            }
+          });
+
+          input.addEventListener('input', function() {
+            const errorId = input.id + '-error';
+            const errorEl = document.getElementById(errorId);
+            if (errorEl && errorEl.classList.contains('hidden') === false) {
+              if (input.value.trim()) {
+                if (input.type === 'email') {
+                  const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+                  if (emailRegex.test(input.value.trim())) {
+                    errorEl.classList.add('hidden');
+                  }
+                } else {
+                  errorEl.classList.add('hidden');
+                }
+              }
+            }
+          });
+        });
+
+        // Radio button validation
+        const radioButtons = form.querySelectorAll('input[name="interest"]');
+        radioButtons.forEach(radio => {
+          radio.addEventListener('change', function() {
+            document.getElementById('interest-error').classList.add('hidden');
+          });
+        });
+      })();
+
+      // Mobile Menu Toggle
+      (function() {
+        const menuButton = document.getElementById('mobile-menu-button');
+        const mobileMenu = document.getElementById('mobile-menu');
+        const menuIcon = document.getElementById('menu-icon');
+        const closeIcon = document.getElementById('close-icon');
+        
+        if (menuButton && mobileMenu) {
+          menuButton.addEventListener('click', function() {
+            const isHidden = mobileMenu.classList.contains('hidden');
+            
+            if (isHidden) {
+              mobileMenu.classList.remove('hidden');
+              menuIcon.classList.add('hidden');
+              closeIcon.classList.remove('hidden');
+              document.body.style.overflow = 'hidden';
+            } else {
+              mobileMenu.classList.add('hidden');
+              menuIcon.classList.remove('hidden');
+              closeIcon.classList.add('hidden');
+              document.body.style.overflow = '';
+            }
+          });
+          
+          // Close menu when clicking on a link
+          const menuLinks = mobileMenu.querySelectorAll('a');
+          menuLinks.forEach(link => {
+            link.addEventListener('click', function() {
+              mobileMenu.classList.add('hidden');
+              menuIcon.classList.remove('hidden');
+              closeIcon.classList.add('hidden');
+              document.body.style.overflow = '';
+            });
+          });
+          
+          // Close menu on window resize if it's open
+          window.addEventListener('resize', function() {
+            if (window.innerWidth >= 768 && !mobileMenu.classList.contains('hidden')) {
+              mobileMenu.classList.add('hidden');
+              menuIcon.classList.remove('hidden');
+              closeIcon.classList.add('hidden');
+              document.body.style.overflow = '';
+            }
+          });
+        }
+      })();
+    </script>
+
+</body></html>
