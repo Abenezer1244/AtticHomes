@@ -165,10 +165,32 @@ color: #e5e5e5;
 ::-webkit-scrollbar-thumb { background: #333; border-radius: 3px; }
 ::-webkit-scrollbar-thumb:hover { background: #444; }
 /* Animation Utilities */
-.animate-fade-up { opacity: 0; transform: translateY(20px); animation: fadeUp 0.8s cubic-bezier(0.16, 1, 0.3, 1) forwards; }
-.delay-100 { animation-delay: 0.1s; }
-.delay-200 { animation-delay: 0.2s; }
-.delay-300 { animation-delay: 0.3s; }
+.animate-fade-up { 
+  opacity: 0; 
+  transform: translateY(20px); 
+  transition: opacity 0.8s cubic-bezier(0.16, 1, 0.3, 1), transform 0.8s cubic-bezier(0.16, 1, 0.3, 1);
+}
+.animate-fade-up.animated { 
+  opacity: 1; 
+  transform: translateY(0); 
+}
+.delay-100 { transition-delay: 0.1s; }
+.delay-200 { transition-delay: 0.2s; }
+.delay-300 { transition-delay: 0.3s; }
+
+/* Respect user's motion preferences */
+@media (prefers-reduced-motion: reduce) {
+  .animate-fade-up {
+    opacity: 1;
+    transform: none;
+    transition: none;
+  }
+  .animate-fade-up.animated {
+    opacity: 1;
+    transform: none;
+  }
+}
+
 @keyframes fadeUp {
 to { opacity: 1; transform: translateY(0); }
 }
@@ -888,16 +910,33 @@ addUtilities({
         type();
       })();
 
-      // Scroll Animation for "Why Choose Us" Stack
+      // Scroll Animation for "Why Choose Us" Stack (Mobile-optimized)
       document.addEventListener('DOMContentLoaded', () => {
           const section = document.querySelector('#why-choose-us');
           const card1 = document.querySelector('#card-1');
           const card2 = document.querySelector('#card-2');
           const card3 = document.querySelector('#card-3');
 
+          if (!section || !card1 || !card2 || !card3) return;
+
+          // Check for reduced motion preference
+          const prefersReducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+          
+          if (prefersReducedMotion) {
+            // Show all cards immediately without animation
+            card1.style.transform = 'scale(1) rotate(-2deg)';
+            card2.style.transform = 'translateY(0%) scale(1) rotate(2deg)';
+            card2.style.opacity = '1';
+            card3.style.transform = 'translateY(0%) scale(1) rotate(-1deg)';
+            card3.style.opacity = '1';
+            return;
+          }
+
           card1.style.transform = 'scale(1) rotate(-2deg)';
 
-          window.addEventListener('scroll', () => {
+          // Throttle scroll events for better mobile performance
+          let ticking = false;
+          function updateScrollAnimation() {
               const rect = section.getBoundingClientRect();
               const viewportHeight = window.innerHeight;
               let progress = Math.min(1, Math.max(0, -rect.top / (rect.height - viewportHeight)));
@@ -945,17 +984,56 @@ addUtilities({
                   card3.style.transform = `translateY(120%)`;
                   card3.style.opacity = 0;
               }
-          });
+              
+              ticking = false;
+          }
+
+          function onScroll() {
+              if (!ticking) {
+                  window.requestAnimationFrame(updateScrollAnimation);
+                  ticking = true;
+              }
+          }
+
+          // Use passive event listener for better mobile performance
+          window.addEventListener('scroll', onScroll, { passive: true });
+          
+          // Initial check in case section is already in view
+          updateScrollAnimation();
+          
+          // Also check on resize for mobile orientation changes
+          window.addEventListener('resize', updateScrollAnimation, { passive: true });
       });
 
-      // Timeline Animation logic
+      // Timeline Animation logic (Mobile-optimized)
       (function() {
           const wrapper = document.getElementById('timeline-wrapper');
           const progressBar = document.getElementById('timeline-progress-bar');
           const steps = wrapper ? wrapper.querySelectorAll('.timeline-step') : [];
 
-          function onScroll() {
-              if (!wrapper) return;
+          // Check for reduced motion preference
+          const prefersReducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+          
+          if (prefersReducedMotion && wrapper) {
+            // Show all timeline steps immediately
+            steps.forEach(step => {
+              const marker = step.querySelector('[data-step-marker]');
+              const fill = step.querySelector('.step-fill');
+              const card = step.querySelector('.step-card');
+              const title = step.querySelector('.step-title');
+              if (marker) marker.style.opacity = '1';
+              if (fill) fill.style.opacity = '1';
+              if (card) { card.classList.remove('opacity-0', 'translate-y-12'); card.classList.add('opacity-100', 'translate-y-0'); }
+              if (title) { title.classList.remove('text-neutral-400'); title.classList.add('text-white'); }
+            });
+            if (progressBar) progressBar.style.height = '100%';
+            return;
+          }
+
+          let ticking = false;
+          
+          function updateTimeline() {
+              if (!wrapper || !progressBar) return;
               const rect = wrapper.getBoundingClientRect();
               const viewportHeight = window.innerHeight;
               const startThreshold = viewportHeight * 0.6;
@@ -987,9 +1065,22 @@ addUtilities({
                       if (card) { card.classList.add('opacity-0', 'translate-y-12'); card.classList.remove('opacity-100', 'translate-y-0'); }
                   }
               });
+              
+              ticking = false;
           }
+
+          function onScroll() {
+              if (!ticking) {
+                  window.requestAnimationFrame(updateTimeline);
+                  ticking = true;
+              }
+          }
+          
           window.addEventListener('scroll', onScroll, { passive: true });
-          onScroll();
+          updateTimeline();
+          
+          // Also check on resize for mobile orientation changes
+          window.addEventListener('resize', updateTimeline, { passive: true });
       })();
     </script>
 
